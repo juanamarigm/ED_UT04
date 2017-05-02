@@ -15,7 +15,7 @@ public class Main {
         CCuenta a;
         double saldoA;
 
-        a = new CCuenta("Felipe Segundo","2222-2222-22-1230456789", 2222,0);
+        a = new CCuenta("Felipe II","2222-2222-22-1230456789", 2222,0);
         saldoA = a.getSaldo();
         System.out.println("El saldo actual es"+ saldoA );
 
