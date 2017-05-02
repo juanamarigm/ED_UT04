@@ -19,8 +19,8 @@ public class Main {
         saldoA = a.getSaldo();
         System.out.println("El saldo actual es"+ saldoA );
 
-        Retirada(a, 2300);
-        Ingreso(a, 300);
+        retirada(a, 2300);
+        ingreso(a, 300);
         toString(a);
     }
 
@@ -37,7 +37,7 @@ public class Main {
      * @param a Cuenta Corriente
      * @param cantidad Cantidad a ingresar
      */
-    public static void Ingreso(CCuenta a, double cantidad) {
+    public static void ingreso(CCuenta a, double cantidad) {
         try {
             System.out.println("Ingreso en cuenta");
             a.ing(cantidad);
@@ -51,7 +51,7 @@ public class Main {
      * @param a Cuenta Corriente
      * @param cantidad Cantidad a retirar
      */
-    public static void Retirada(CCuenta a, int cantidad) {
+    public static void retirada(CCuenta a, int cantidad) {
         try {
             a.ret(cantidad);
         } catch (Exception e) {
